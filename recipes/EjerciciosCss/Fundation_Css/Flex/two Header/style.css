@@ -1,0 +1,60 @@
+
+
+.header{
+    background-color: rgb(227, 234, 240);
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+}
+
+.logo{
+    color: rebeccapurple;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: rebeccapurple;
+}
+ul{
+    list-style-type: none;
+   
+}
+li{
+    margin: 0 5px;
+}
+.notifications{
+    border: none;
+    border-radius: 8px;
+    background: rebeccapurple;
+    color: white;
+    padding: 8px 24px;
+}
+.profile-image{
+    background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height:  48px;
+
+}
+
+.header{
+ display: flex;    background-color: aliceblue;
+ justify-content: space-between;
+ padding:  16px;
+
+}
+
+ul{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    gap: 16px;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}

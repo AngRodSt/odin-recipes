@@ -1,0 +1,27 @@
+#Header{
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: antiquewhite;
+}
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+     gap: 8px;
+     text-decoration: none;
+}
+#Logo{
+    font-size: 10px;
+    font-weight: 900;
+    color: tomato;
+    background: rgb(78, 15, 15);
+    padding: 1px 10px;
+  
+}
+li{
+    background-color:blanchedalmond;
+}
