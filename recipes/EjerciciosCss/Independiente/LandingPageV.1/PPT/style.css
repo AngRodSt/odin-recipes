@@ -31,3 +31,10 @@ border: 5px solid rgb(55, 62, 121);
     display: flex;
     gap: 25px;
 }
+.compu button.show {
+    transform: scale(1.1);
+background-color: antiquewhite;
+border: 5px solid rgb(55, 62, 121);
+transition: 0.3s ease-in-out;
+
+}
