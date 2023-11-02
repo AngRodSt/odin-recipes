@@ -1,7 +1,13 @@
 body{
-    background-color: rgb(1, 1, 43);
+    margin: 1pz;
+    padding: 0;
+    background-color: black;
+    
 }
-button{
+.center{
+    background-color: antiquewhite;
+}
+.center button{
     width: 150px;
     height: 150px;
     border: 5px solid rgb(168, 185, 243);
@@ -9,19 +15,22 @@ button{
     font-size: 90px;
     background-color: rgb(24, 23, 21);
     transition: 0.3s ease-in-out;
+    box-shadow: 1px 5px 15px  rgb(88, 81, 146);
 }
 .player button:hover{
 transform: scale(1.1);
 background-color: antiquewhite;
 border: 5px solid rgb(55, 62, 121);
+box-shadow: 5px 5px 15px rgb(223, 220, 220);
 }
 .center{
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:200px;
+    gap:100px;
+    padding: 25px 0;
+    flex: 1;
+    
 }
 .compu{
     display: flex;
@@ -36,5 +45,104 @@ border: 5px solid rgb(55, 62, 121);
 background-color: antiquewhite;
 border: 5px solid rgb(55, 62, 121);
 transition: 0.3s ease-in-out;
+box-shadow: 5px 5px 15px rgb(223, 220, 220);
+}
+.table{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: none;
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(49, 49, 58);
+    box-shadow: 10px 10px 15px rgb(88, 81, 146);
+    align-items: center;
+}
+.table h1{
+    margin: 5px;
+    font-family: "VT323";
+    font-size: 55px;
 
+}
+.table span{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.table button{
+    width: 90px;
+    height: 50px;
+    border: 1px solid rgb(168, 185, 243);
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: rgb(165, 174, 255);
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    box-shadow: 1px 5px 15px  rgb(88, 81, 146);
+    translate: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table button:hover{
+    transform: scale(1.1);
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(12, 12, 12);
+}
+.encabe{
+    background-color: rgb(1, 1, 43);
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    background-image: url("/Independiente/LandingPageV.1/PPT/0f639a0d743b6722958c9121602a6aaf.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 10px;
+}
+
+.encabe h1{
+    color:rgb(220, 218, 243);
+    font-family: "VT323";
+    font-size: 45px;
+    
+}
+
+.izq img{
+    width: 410px;
+    height: 550px;
+    translate: 80px;
+}
+.izq{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.der{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.der img{
+    width: 410px;
+    height: 550px;
+    translate: -35px;
+
+}
+.centrao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    padding: 25px 0;
+    flex:1;
 }
