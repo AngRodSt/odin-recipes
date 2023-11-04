@@ -1,0 +1,25 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    display:flex;
+    flex-wrap: wrap;
+    border: 0.2px solid;
+    
+}
+.container div{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin:0;
+    padding: 0;
+    width: 31.25px;
+    height: 31.25px;
+}
+.container div size{
+
+}
+
+
+.encabezado{
+    
+}
