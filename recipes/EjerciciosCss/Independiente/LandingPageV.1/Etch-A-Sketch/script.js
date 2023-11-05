@@ -1,28 +1,59 @@
-num=1
 let contenedor = document.querySelector(".container");
-let size = 256;
-let si16=document.querySelector(".size16");
-let si24=document.querySelector(".size24");
-let si32=document.querySelector(".size32");
+const defautSize= 16;
+let currentColor = 'black';
 
-//Arreglar condicionales
-//Arreglar tamanos de los recuadros
-//Anadir paleta de colores
-si24.addEventListener('click',()=>{
-    size=576;
-})
 
-for(let i=0;i<size;i++){
-    let divi= document.createElement("div");
-    contenedor.appendChild(divi);
+let slider = document.querySelector(".range");
+let  sizeSlider = document.querySelector(".size");
+
+//El slider actualiza los numeros donde vaya pasando
+slider.onmousemove = (e)=>UpdateSize(e.target.value);
+//El slider actualiza el tamaño de los recuadros según donde pare
+slider.onchange = (e)=> ChangeSize(e.target.value);
+
+let currentSize = defautSize;
+
+function setCurrentSize(newsize){
+    currentSize=newsize;
+    }
+
+function ChangeSize(value){
+    setCurrentSize(value);
+    UpdateSize(value);
+    ReloadCont();
+}
+function UpdateSize(value){
+    sizeSlider.innerHTML = `${value} x ${value}`;
+}
+function ReloadCont(){
+    Clear();
+    SetUp(currentSize);
+}
+function Clear(){
+    contenedor.innerHTML='';
+}
+
+let color = document.querySelector(".color");
+
+function ChangeColor(newcolor){
+currentColor=newcolor;
+}
+color.oninput = (e) => ChangeColor(e.target.value);
+
+function SetUp(currentSize){
+    contenedor.style.gridTemplateColumns = `repeat(${currentSize}, 1fr)`
+    contenedor.style.gridTemplateRows = `repeat(${currentSize}, 1fr)`
+    
+    for(let i=0;i<currentSize*currentSize;i++){
+        let divi= document.createElement("div");
+        contenedor.appendChild(divi);
+
         divi.addEventListener('mouseover',()=>{
-            divi.style="background-color:black"});
-        let negro = document.querySelector(".black")
-        negro.addEventListener('click',()=>{
-            divi.addEventListener('mouseover',()=>{
-                divi.style="background-color:black"
-            })
-        })
+            divi.style.backgroundColor=currentColor});
+        
+        let colorBut= document.querySelector(".colorBut")
+        colorBut.addEventListener('click',()=>{divi.addEventListener('mouseover',()=>{
+            divi.style.backgroundColor=currentColor});})
         let clear = document.querySelector(".clear");
         clear.addEventListener('click',()=>{
             divi.style="background-color:white"
@@ -30,8 +61,22 @@ for(let i=0;i<size;i++){
         let erase = document.querySelector(".erase");
         erase.addEventListener('click',()=>{
             divi.addEventListener('mouseover',()=>{
-                divi.style="background-color:white"
+                divi.style="backgroud-color:white";
             })
         })
+    
+    }
+}
 
+
+
+
+//Arreglar condicionales
+//Arreglar tamanos de los recuadros
+//Anadir paleta de colores
+
+
+window.onload=()=>{
+    SetUp(defautSize);
+    
 }

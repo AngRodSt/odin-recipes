@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Graduate">
 </head>
 <body>
-    <div class="encabezado"><h1>ETCH-AT-SKETCH</h1></div>
+    
+    <div class="encabezado">
+    <h1>ETCH-AT-SKETCH</h1></div>
     <div class="centro">
         <div class="botones">
-            <button class="black">BLACK</button>
-            <button class="color">COLOR</button>
-            <button class="size16">16x16</button>
-            <button class="size24">24x24</button>
-            <button class="size32">32x32</button>
-            <button class="erase">ERASE</button>
+            <input class="color" type="color">
+            <div class="size">16 x 16</div>
+            <input class="range" type="range" value="16">
+            <button class="colorBut">COLOR MODE</button>
+            <button class="erase">ERASE MODE</button>
             <button class="clear">CLEAR</button>
         </div>
         <div class="container"></div>
