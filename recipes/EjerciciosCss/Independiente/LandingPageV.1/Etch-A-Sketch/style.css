@@ -1,0 +1,90 @@
+.body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    display:grid;
+    box-shadow: 0px 1px 50px rgb(143, 143, 252);
+}
+.container div{
+    background-color: rgb(255, 255, 255);
+user-select: none;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    background-image: url("dondo.png" );
+    background-repeat: no-repeat;
+    background-size:cover;
+    translate: 0 -9px;
+    padding: 15px;
+    margin-bottom: 90px;
+
+}
+
+.encabezado h1{
+    color:  rgb(14, 3, 167);
+    text-shadow: 5px 1px 2px rgb(255, 187, 0);
+    font-size: 50px;
+    display: flex;
+    font-family: Graduate;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine;*/
+    margin: 0 10px;
+    gap: 150px;
+    flex-wrap: wrap;
+
+
+    
+
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    /*background-color: aqua;*/
+    gap: 30px;
+    align-items: center;
+    margin-top: 10px;
+}
+.botones button{
+    width: 125px;
+    height: 30px;
+    background-color: rgb(247, 221, 110);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: -2px 5px 0px rgba(0, 26, 255, 0.959);
+    transition: 0.2s ease-in-out;
+}
+.botones button:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    background-color: #fffffff5;
+    box-shadow: -2px 5px 2px #000000f5;
+}
+.color{
+    width: 75px;
+    border:3px solid rgba(0, 38, 255, 0.5);
+    box-shadow: 0px 0px 5px rgb(0, 0, 255);
+    height: 75px;
+    translate: 0 25px;
+}
+.size{
+    display: flex;
+    margin: 0px;
+    font-size: 15px;
+    font-family: Graduate;
+    translate: 0 30px;
+}
+.range{
+    width: 150px;
+    background-color: aquamarine;
+}
