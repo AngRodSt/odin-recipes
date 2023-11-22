@@ -69,13 +69,6 @@ function SetUp(currentSize){
 }
 
 
-
-
-//Arreglar condicionales
-//Arreglar tamanos de los recuadros
-//Anadir paleta de colores
-
-
 window.onload=()=>{
     SetUp(defautSize);
     

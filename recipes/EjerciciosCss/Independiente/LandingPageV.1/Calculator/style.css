@@ -1,48 +1,83 @@
 body{
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
     justify-content: center;    
 }
 .calculator{
     display: flex;
+    background-image: url("/EjerciciosCss/Independiente/LandingPageV.1/Calculator/4173737.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
     flex-direction: column;
-    background-color:rgb(188, 189, 189);
-    width: 250px;
+    background-color:rgb(250, 247, 247);
+    width: 350px;
     align-items: center;
+    height: 520px;
+    border-radius: 7%;
+    box-shadow: 15px 15px 4px  rgb(51, 50, 47)
   
 }
 .container{
-    background-color: rgb(255, 235, 125);
-    width: 210px;
-    height: 50px;
-    display: flex;
-    margin-top: 10px;
+    background-color: rgb(199, 196, 176);
+    width: 290px;
+    height: 60px;
+    display:flex;
+    margin-top: 20px;
+    padding:  6px 10px;
     align-items: end;
     flex-direction: column;
+    box-shadow: inset 10px 10px 10px rgb(51, 50, 47);
+    
     
 }
 
 .numbers{
-    gap: 4px;
+    gap: 10px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
 }
 button{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    border: 1px solid rgb(74, 195, 232);
+    border-radius: 30%;
+    box-shadow: inset 3px 3px 4px rgb(28, 185, 242);
+   transition: 0.3s ease-in-out;
+    color: rgb(0, 114, 159);
+    font-weight: 700;
+    
 } 
+button:hover{
+    transform: scale(0.9);
+    transition: 0.2s ease-in-out;
+    background-color: azure;
+    
+}
 #zero{
-    width: 100px;
+    width: 150px;
 }
 #LastScreen{
-    background-color: rgb(183, 220, 220);
+   /* background-color: rgb(183, 220, 220);*/
     width: 130px;
-    height: 50px;
+    height: 30px;
+    font-size: 15px;
+    padding: 3px;
+    display: flex;
+    justify-content: end;
 }
 #CurrentScreen{
-    background-color: rgb(101, 107, 141);
+   /* background-color: rgb(101, 107, 141);*/
     width: 130px;
-    height: 50px;   
+    height: 30px;   
+    padding: 3px 0;
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 4px;
+    
 }
